@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@js-preview/docx": "^1.6.4",
+    "@js-preview/excel": "^1.7.14",
+    "@js-preview/pdf": "^2.0.10",
+    "core-js": "^3.44.0",
+    "dayjs": "^1.11.11",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "glsk-toolkit": "1.0.4",
+    "hammerjs": "^2.0.8",
+    "lodash": "^4.17.21",
+    "number-precision": "^1.6.0",
+    "pinyin.js": "^2.0.0",
+    "prettier": "^3.3.2",
+    "uview-ui": "^2.0.38",
+    "webpack-spritesmith": "^1.1.0"
+  }
+}

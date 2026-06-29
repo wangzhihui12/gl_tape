@@ -1,0 +1,371 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/common/loading",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/login",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/equity/index",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/equity/detail/detail",
+      "style": {
+        "navigationStyle": "custom",
+        "onReachBottonDistance": 50,
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/common/nothing",
+      "style": {
+        "navigationBarTitleText": "提示"
+      }
+    },
+    {
+      "path": "pages/common/accountItems",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "选择账号"
+      }
+    },
+    {
+      "path": "pages/boutique/index",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/boutique/invitation",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/boutique/case",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/boutique/history",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/boutique/preview",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/common/imgPreview",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+      "style": {
+        "disableScroll": true,
+        "app-plus": {
+          "backgroundColorTop": "transparent",
+          "background": "transparent",
+          "titleNView": false,
+          "scrollIndicator": false,
+          "popGesture": "none",
+          "animationType": "fade-in",
+          "animationDuration": 200
+        }
+      }
+    },
+    {
+      "path": "pages/common/webview"
+    },
+    {
+      "path": "pages/common/aiWebview",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyWebview",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyCenter/myTask",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyCenter/myCourse",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyCenter/myExam",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyCenter/leaderboard",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyCenter/courseDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/msgwebview"
+    },
+    {
+      "path": "pages/common/customerDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/caseDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/messageDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/earlyWarnDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/messageList",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/systemDetail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/receptionDetail/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyDetail/longCourse",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyDetail/caseCourse",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyDetail/shortCourse",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyDetail/shortCourseLearnRoom",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/studyDetail/detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/serviceDetail/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/materialDetail/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/boutique/tool/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/evaluationForm/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/evaluationForm/addEvaluationFrom",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/usedCar/index",
+      "style": {
+        "navigationStyle": "custom",
+        "disableSwipeBack": true
+      }
+    },
+    {
+      "path": "pages/usedCar/tool/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/evaluationForm/signInfo",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/evaluationForm/confirmCar",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/evaluationForm/evaluationFormDetails",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/evaluationForm/components/pdfPreView",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/usedCar/deliveryManagement/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/usedCar/deliveryManagement/detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/equity/tool/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/usedCar/reportManagement/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/filePreview",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/common/caseDetail/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/wageAppeal/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/usedCar/inspectionReport/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "检测报告",
+        "navigationBarBackgroundColor": "#f5f9ff",
+        "navigationBarTextStyle": "black",
+        "app-plus": {
+          "navigationStyle": "default",
+          "bounce": "none",
+          "titleNView": {
+            "backgroundColor": "#f5f9ff",
+            "titleColor": "#333333",
+            "autoBackButton": true
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/common/dailyNewspaper/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "展业助手",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "pageOrientation": "landscape",
+    "app-plus": {
+      "bounce": "none"
+    },
+    "rpxCalcMaxDeviceWidth": 375,
+    "rpxCalcBaseDeviceWidth": 375,
+    "rpxCalcIncludeWidth": 750
+  }
+}

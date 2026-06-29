@@ -1,0 +1,221 @@
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+$fixedWidth: 2346;
+$detailVW: 100vmin * (1173 / 768);
+
+@function toRpx($val) {
+  @return $detailVW * ($val / $fixedWidth);
+}
+
+@function toMinusRpx($val) {
+  @return $detailVW * ($val / $fixedWidth) * -1;
+}
+
+$margin: 0 calc((100vmax - #{$detailVW}) / 2);
+@import 'uview-ui/theme.scss';
+
+@import './assets/css/sprite.scss';
+@import './assets/css/common.scss';
+@import '@js-preview/docx/lib/index.css';
+@import '@js-preview/excel/lib/index.css';
+@font-face {
+  font-family: 'number-700';
+  src: url('https://img02.glsx.com.cn/weapp/resource/dj-car-boutique-work-wechat/font/D-DIN-PRO-700-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'number-400';
+  src: url('https://img02.glsx.com.cn/weapp/resource/dj-car-boutique-work-wechat/font/D-DIN-PRO-400-Regular.ttf');
+}
+
+@keyframes show-view {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-view-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-view-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-hide {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-two-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 定义文本的行数 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.byd-layout {
+  background: url('@/assets/images/media/byd-media-bg.webp') no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .fixforpc-width {
+    min-width: auto !important;
+    width: fit-content !important;
+    padding: toRpx(20) toRpx(46) !important;
+  }
+}
+
+.select-box {
+  .select-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes show-view-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.common-title {
+  width: 100%;
+  height: toRpx(120);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: toRpx(48);
+  color: #333333;
+  font-size: toRpx(34);
+  font-weight: 500;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #94c2ff00 0%, #5294ff 100%);
+    opacity: 0.15;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: toMinusRpx(20);
+    top: toMinusRpx(28);
+    z-index: -1;
+    width: toRpx(136);
+    height: toRpx(136);
+    opacity: 0.6;
+    background: linear-gradient(-44.4deg, #94c2ff00 0%, #5294ff 100%);
+    filter: blur(toRpx(24));
+  }
+}
+.bg-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: toRpx(120);
+  display: flex;
+  align-items: center;
+  padding-left: toRpx(48);
+  color: #333333;
+  font-size: toRpx(34);
+  font-weight: 500;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #94c2ff00 0%, #5294ff 100%);
+    opacity: 0.15;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: toMinusRpx(20);
+    top: toMinusRpx(28);
+    z-index: -1;
+    width: toRpx(136);
+    height: toRpx(136);
+    opacity: 0.6;
+    background: linear-gradient(-44.4deg, #94c2ff00 0%, #5294ff 100%);
+    filter: blur(toRpx(24));
+  }
+}
+@keyframes left-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: toRpx(240);
+  }
+}
+@keyframes left-out {
+  0% {
+    left: toRpx(240);
+  }
+  100% {
+    left: 100%;
+  }
+}

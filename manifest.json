@@ -1,0 +1,141 @@
+{
+    "name" : "展业助手",
+    "appid" : "__UNI__D3BD3DF",
+    "description" : "",
+    "versionName" : "2.25.4",
+    "versionCode" : 2254,
+    "transformPx" : false,
+    "sassImplementationName" : "node-sass",
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "cache" : {
+            "mode" : "noCache"
+        },
+        "webview" : {
+            "cacheMode" : "noCache"
+        },
+        "bounce" : "none",
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "screenOrientation" : "landscape",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Camera" : {},
+            "Record" : {},
+            "VideoPlayer" : {},
+            "AudioPlayer" : {},
+            "SQLite" : {},
+            "Maps" : {},
+            "Geolocation" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ],
+                "targetSdkVersion" : 30,
+                "minSdkVersion" : 21,
+                "excludePermissions" : [
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false,
+                "UIBackgroundModes" : "audio"
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "ad" : {},
+                "speech" : {},
+                "geolocation" : {
+                    "baidu" : {
+                        "__platform__" : [ "android" ],
+                        "appkey_ios" : "",
+                        "appkey_android" : "rfN7u5gCi0KyCGIWWBYGXlmKrVQsKH8z"
+                    }
+                },
+                "maps" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/72.png",
+                    "xhdpi" : "static/96.png",
+                    "xxhdpi" : "static/144.png"
+                }
+            }
+        },
+        "nativePlugins" : {
+            "Ba-KeepAliveSuit" : {
+                "__plugin_info__" : {
+                    "name" : "安卓保活套装（通用、常驻通知、电池优化、自启管理、后台运行等）",
+                    "description" : "在Ba-KeepAlive的基础上，新增了忽略电池优化、自启管理、常驻通知。为定位、推送、websocket、定时任务、蓝牙、聊天等保驾护航（**注意：**不保证支持所有机型和场景，建议先试用再购买）",
+                    "platforms" : "Android",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=11765",
+                    "android_package_name" : "uni.gltap",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "11765",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx79d1ff39bee3d047",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "2",
+    "h5" : {
+        "devServer" : {
+            "port" : 8080,
+            "https" : false
+        }
+    }
+}

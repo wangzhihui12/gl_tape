@@ -1,0 +1,7 @@
+/unpackage
+/.idea
+/.vscode
+/.DS_Store
+/.hbuilderx
+node_modules
+config.js
